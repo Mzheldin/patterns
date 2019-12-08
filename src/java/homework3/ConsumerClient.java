@@ -1,4 +1,4 @@
 package java.homework3;
 
-public interface ConsumerClient {
+public interface ConsumerClient extends Client {
 }

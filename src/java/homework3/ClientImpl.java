@@ -1,4 +1,4 @@
 package java.homework3;
 
-public class Client {
+public class ClientImpl implements ConsumerClient, ProviderClient {
 }

@@ -1,4 +1,4 @@
 package java.homework3;
 
-public interface ProviderClient {
+public interface ProviderClient extends Client {
 }
