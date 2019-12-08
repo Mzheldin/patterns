@@ -10,14 +10,14 @@ public class ContractFactoryMethodImpl implements ContractFactoryMethod {
         return null;
     }
 
-    private Contract createConsumerContract(Manager manager, ConsumerClient client){
+    private ConsumerContract createConsumerContract(Manager manager, ConsumerClient client){
         ContractImpl contract = new ContractImpl();
         contract.setManager(manager);
         contract.setClient(client);
         return contract;
     }
 
-    private Contract createProviderContract(Manager manager, ProviderClient client){
+    private ProviderContract createProviderContract(Manager manager, ProviderClient client){
         ContractImpl contract = new ContractImpl();
         contract.setManager(manager);
         contract.setClient(client);
