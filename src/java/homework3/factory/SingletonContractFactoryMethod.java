@@ -1,4 +1,4 @@
-package java.homework3;
+package java.homework3.factory;
 
 public class SingletonContractFactoryMethod {
     private static volatile SingletonContractFactoryMethod thisInstance;
