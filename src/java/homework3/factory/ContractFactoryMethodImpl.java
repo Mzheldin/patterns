@@ -1,4 +1,13 @@
-package java.homework3;
+package java.homework3.factory;
+
+import java.homework3.Manager;
+import java.homework3.client.Client;
+import java.homework3.client.ConsumerClient;
+import java.homework3.client.ProviderClient;
+import java.homework3.contract.ConsumerContract;
+import java.homework3.contract.Contract;
+import java.homework3.contract.ContractImpl;
+import java.homework3.contract.ProviderContract;
 
 public class ContractFactoryMethodImpl implements ContractFactoryMethod {
     @Override

@@ -1,4 +1,7 @@
-package java.homework3;
+package java.homework3.contract;
+
+import java.homework3.client.Client;
+import java.homework3.Manager;
 
 public class ContractImpl implements ConsumerContract, ProviderContract {
     private Manager manager;
