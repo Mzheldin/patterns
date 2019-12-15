@@ -54,6 +54,9 @@ public class ContractImpl implements ConsumerContract, ProviderContract, Operati
 
     @Override
     public void update(int amount) {
-        this.amount =+ amount;
+        int tempAmount = 0;
+        for (Operation operation : operations)
+            tempAmount =+ operation.getAmount();
+        this.amount = tempAmount;
     }
 }
