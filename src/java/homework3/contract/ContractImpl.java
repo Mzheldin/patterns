@@ -3,6 +3,7 @@ package java.homework3.contract;
 import java.homework3.client.Client;
 import java.homework3.Manager;
 import java.homework3.observer.OperationObserver;
+import java.homework3.observer.OperationSubject;
 import java.util.List;
 
 public class ContractImpl implements ConsumerContract, ProviderContract, OperationObserver {

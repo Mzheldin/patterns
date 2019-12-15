@@ -5,12 +5,13 @@ import java.homework3.observer.OperationSubject;
 import java.util.Set;
 
 public class Operation implements OperationSubject {
-    private Contract contract;
+    private ContractImpl contract;
     private int amount;
     private Set<OperationObserver> operationObservers;
 
-    public Operation(Contract contract) {
+    public Operation(ContractImpl contract) {
         this.contract = contract;
+        operationObservers.add(contract);
     }
 
     public int getAmount() {
