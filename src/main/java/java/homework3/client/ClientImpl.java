@@ -1,14 +1,30 @@
 package java.homework3.client;
 
+import javax.persistence.*;
 import java.util.Objects;
 import java.util.UUID;
 
+@Entity
+@Table(name = "clients")
 public class ClientImpl implements ConsumerClient, ProviderClient {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private UUID clientId;
+
+    @Column(name = "name")
     private String name;
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "phone")
     private String phone;
+
+    @Column(name = "email")
     private String email;
+
+    @Column(name = "address")
     private String address;
 
     public ClientImpl(UUID clientId, String name, String lastName, String phone, String email, String address) {
