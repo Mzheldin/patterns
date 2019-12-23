@@ -8,12 +8,12 @@ import java.homework3.repository.ClientRepository;
 import java.util.List;
 
 @Service
-public class ClientSevice {
+public class ClientService {
 
     private ClientRepository clientRepository;
 
     @Autowired
-    public ClientSevice(ClientRepository clientRepository) {
+    public ClientService(ClientRepository clientRepository) {
         this.clientRepository = clientRepository;
     }
 
