@@ -6,4 +6,5 @@ import java.homework3.client.ClientImpl;
 import java.util.UUID;
 
 public interface ClientRepository extends JpaRepository<ClientImpl, UUID> {
+
 }
